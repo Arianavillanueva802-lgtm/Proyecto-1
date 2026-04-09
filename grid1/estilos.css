@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, #FFD194 11%, #FF7C43 83%, #FF3C38 100%);
+}
+
+header{
+    background: rgba(0,0,0,0.6) url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEzfHxmb29kfGVufDB8fHx8MTY5MTE2Mjc1NA&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center/cover;
+    color: #fff;
+    height: 60vh;
+    backdrop-filter: blur(8px);
+}
+
+.container{
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    backdrop-filter: blur(3px);
+}
+
+span{
+    color: #FF3C38;
+    font-weight: 800;
+}
+
+button.btn{
+    padding: 10px 20px;
+    background-color: #FF3C38;
+    border: none;
+    max-width: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    font-size: 20px;
+    color: white;
+}
+button.btn:hover{
+    background-color: #FF7C43;
+    cursor: pointer;
+}
+
+nav{
+    background-color: #fff8f0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.Logo>i{
+    font-size: 35px;
+    color: #FF3C38;
+}
+
+.menu>ul{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    gap: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+li>a{
+    text-decoration: none;
+    color: #FF3C38;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: 500;
+}
+li>a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #FF3C38;
+}
+
+main{
+    height: auto;
+    text-align: center;
+}
+
+section{
+    max-width: 80%;
+    margin: auto;
+}
+
+.servicios>h2{
+    margin: 20px auto;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 3px solid #FF3C38;
+}
+
+.items{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 30px;
+}
+
+.item{
+    text-align: center;
+    background-color: #FFD194;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+.item:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #FF7C43;
+    transform: scale(1.05);
+}
+.item>img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px #FF3C38;
+}
+
+.testimonios{
+    margin: 30px auto;
+    text-transform: uppercase;
+    color: #FF3C38;
+    border-bottom: 3px solid #FF3C38;
+}
+.testimonios>h2{
+    margin: 20px auto;
+    color: #fff;
+}
+
+.testimonios>article{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    background-color: #fff3e6;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.test1{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 10px;
+    background-color: #FF7C43;
+    gap: 10px;
+    padding: 10px;
+}
+
+.img>i{
+    font-size: 80px;
+    color: #FF3C38;
+    width: 110px;
+    height: 110px;
+    display: grid;
+    place-content: center;
+}
+
+footer{
+    background-color: #fff3e6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer-menu{
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #FFD194;
+}
+
+.formulario{
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #FFD194;
+}
+button.bts{
+    padding: 10px 20px;
+    background-color: #FF3C38;
+    border: none;
+    max-width: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    font-size: 20px;
+    color: white;
+}
+button.bts:hover{
+    background-color: #FF7C43;
+    cursor: pointer;
+}
+
+.redes{
+    margin: 20px;
+    background-color: #FFD194;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+}
+
+.redes>a{
+    padding: 2px;
+    color: #804000;
+    font-size: 20px;
+    text-decoration: none;
+}
+.redes>a>i{
+    margin-left: 9px;
+    width: 40px;
+    font-size: 25px;
+    color: #FF3C38;
+}
